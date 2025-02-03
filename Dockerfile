@@ -16,11 +16,8 @@ RUN apt update && apt install -y --no-install-recommends \
     python3 \
     python3-dev \
     python3-pip \
+    nodejs \
     && rm -rf /var/lib/apt/lists/*
-
-RUN apt-get update && apt-get install -y curl && \
-    curl -sL https://deb.nodesource.com/setup_12.x | bash - && \
-    apt-get install -y nodejs
 
 # Clone Demucs (now maintained in the original author's github space)
 RUN git clone --single-branch --branch main https://github.com/YOUUJUN/demucs-docker-source.git /lib/demucs
