@@ -18,8 +18,11 @@ RUN apt update && apt install -y --no-install-recommends \
     python3-pip \
     && rm -rf /var/lib/apt/lists/*
 
+# 安装 Node.js v12
 RUN curl -fsSL https://deb.nodesource.com/setup_12.x | bash - \
-    && apt install -y nodejs
+    && apt install -y --no-install-recommends nodejs \
+    && rm -rf /var/lib/apt/lists/* \
+    && node -v && npm -v
 
 # Clone Demucs (now maintained in the original author's github space)
 RUN git clone --single-branch --branch main https://github.com/YOUUJUN/demucs-docker-source.git /lib/demucs
