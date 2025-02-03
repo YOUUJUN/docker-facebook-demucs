@@ -19,7 +19,7 @@ RUN apt update && apt install -y --no-install-recommends \
 
 # 安装 Node.js 16（LTS 版本）
 RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash - \
-    && apt-get install -y nodejs \
+    && apt install -y nodejs \
     && rm -rf /var/lib/apt/lists/*
 
 # 克隆 Demucs 并安装依赖
