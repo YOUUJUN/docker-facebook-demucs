@@ -1,14 +1,12 @@
 # Base image supports Nvidia CUDA but does not require it and can also run demucs on the CPU
 FROM nvidia/cuda:12.6.2-base-ubuntu22.04
 
+# 设置环境变量
 USER root
 ENV TORCH_HOME=/data/models
 ENV OMP_NUM_THREADS=1
 
-# Install required tools
-# Notes:
-#  - build-essential and python3-dev are included for platforms that may need to build some Python packages (e.g., arm64)
-#  - torchaudio >= 0.12 now requires ffmpeg on Linux, see https://github.com/facebookresearch/demucs/blob/main/docs/linux.md
+# 安装系统依赖
 RUN apt update && apt install -y --no-install-recommends \
     build-essential \
     ffmpeg \
@@ -17,23 +15,34 @@ RUN apt update && apt install -y --no-install-recommends \
     python3-dev \
     python3-pip \
     nodejs \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Clone Demucs (now maintained in the original author's github space)
-RUN git clone --single-branch --branch main https://github.com/YOUUJUN/demucs-docker-source.git /lib/demucs
-WORKDIR /lib/demucs
-# Checkout known stable commit on main
-RUN git checkout b9ab48cad45976ba42b2ff17b229c071f0df9390
+# 克隆 Demucs 并安装依赖
+RUN git clone --single-branch --branch main https://github.com/YOUUJUN/demucs-docker-source.git /lib/demucs \
+    && cd /lib/demucs \
+    && git checkout b9ab48cad45976ba42b2ff17b229c071f0df9390 \
+    && python3 -m pip install -e . "torch<2" "torchaudio<2" "numpy<2" --no-cache-dir \
+    && python3 -m pip install flask --no-cache-dir
 
-# Install dependencies with overrides for known working versions on this base image
-RUN python3 -m pip install -e . "torch<2" "torchaudio<2" "numpy<2" --no-cache-dir
-# Run once to ensure demucs works and trigger the default model download
-RUN python3 -m demucs -d cpu test.mp3 
-# Cleanup output - we just used this to download the model
-RUN rm -r separated
+# 测试 Demucs 并下载默认模型
+RUN cd /lib/demucs \
+    && echo "dummy" > test.mp3 \
+    && python3 -m demucs -d cpu test.mp3 \
+    && rm -r separated test.mp3
 
+# 复制项目文件并安装 Node.js 依赖
+COPY koa-vue-framework-simple /lib/project
+WORKDIR /lib/project
+RUN npm install && npm install -g pm2
+
+# 设置数据卷
 VOLUME /data/input
 VOLUME /data/output
 VOLUME /data/models
 
-# ENTRYPOINT ["/bin/bash", "--login", "-c"]
+# 暴露端口
+EXPOSE 3002
+
+# 启动应用
+CMD ["pm2-runtime", "ecosystem.config.js"]
