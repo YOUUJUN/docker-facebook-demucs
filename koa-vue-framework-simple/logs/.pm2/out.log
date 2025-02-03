@@ -1,0 +1,316 @@
+loading application====================>
+filePaths [
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\nut-core\\extend\\application',
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\app\\extend\\application'
+]
+filePaths [
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\nut-core\\extend\\context',
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\app\\extend\\context'
+]
+property====> helper filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\nut-core\extend\context.js
+filePaths [
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\nut-core\\extend\\helper',
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\app\\extend\\helper'
+]
+property====> helloLa filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\nut-core\extend\helper.js
+property====> helloLa filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> readPages filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> formatBytes filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> errorCaptured filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> saveAs filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> saveDraft filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+loading application====================>
+filePaths [
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\nut-core\\extend\\application',
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\app\\extend\\application'
+]
+filePaths [
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\nut-core\\extend\\context',
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\app\\extend\\context'
+]
+property====> helper filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\nut-core\extend\context.js
+filePaths [
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\nut-core\\extend\\helper',
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\app\\extend\\helper'
+]
+property====> helloLa filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\nut-core\extend\helper.js
+property====> helloLa filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> readPages filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> formatBytes filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> errorCaptured filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> saveAs filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> saveDraft filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+config {
+  username: 'root',
+  password: null,
+  database: 'database_development',
+  host: '127.0.0.1',
+  dialect: 'mysql'
+}
+The Main Service has started on port  3002
+  <-- GET /
+somebody just visit home page!
+hellala from custom helper
+  xxx GET / 500 25ms -
+-----7
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 404 2ms -
+  <-- GET /undefined
+  --> GET /undefined 404 2ms -
+  <-- GET /getFile
+  --> GET /getFile 404 2ms -
+  <-- GET /undefined
+  --> GET /undefined 404 1ms -
+  <-- GET /getFile
+  --> GET /getFile 404 2ms -
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 404 1ms -
+  <-- GET /undefined
+  --> GET /undefined 404 2ms -
+  <-- POST /getFile
+  --> POST /getFile 404 0ms -
+loading application====================>
+filePaths [
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\nut-core\\extend\\application',
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\app\\extend\\application'
+]
+filePaths [
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\nut-core\\extend\\context',
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\app\\extend\\context'
+]
+property====> helper filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\nut-core\extend\context.js
+filePaths [
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\nut-core\\extend\\helper',
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\app\\extend\\helper'
+]
+property====> helloLa filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\nut-core\extend\helper.js
+property====> helloLa filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> readPages filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> formatBytes filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> errorCaptured filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> saveAs filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> saveDraft filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+config {
+  username: 'root',
+  password: null,
+  database: 'database_development',
+  host: '127.0.0.1',
+  dialect: 'mysql'
+}
+The Main Service has started on port  3002
+loading application====================>
+filePaths [
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\nut-core\\extend\\application',
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\app\\extend\\application'
+]
+filePaths [
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\nut-core\\extend\\context',
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\app\\extend\\context'
+]
+property====> helper filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\nut-core\extend\context.js
+filePaths [
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\nut-core\\extend\\helper',
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\app\\extend\\helper'
+]
+property====> helloLa filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\nut-core\extend\helper.js
+property====> helloLa filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> readPages filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> formatBytes filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> errorCaptured filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> saveAs filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> saveDraft filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+config {
+  username: 'root',
+  password: null,
+  database: 'database_development',
+  host: '127.0.0.1',
+  dialect: 'mysql'
+}
+The Main Service has started on port  3002
+  <-- GET /getFile
+  --> GET /getFile 404 8ms -
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 404 2ms -
+  <-- GET /undefined
+  --> GET /undefined 404 2ms -
+  <-- GET /
+somebody just visit home page!
+hellala from custom helper
+  xxx GET / 500 3ms -
+-----7
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 404 1ms -
+  <-- GET /undefined
+  --> GET /undefined 404 1ms -
+  <-- GET /
+somebody just visit home page!
+hellala from custom helper
+  xxx GET / 500 1ms -
+-----7
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 404 1ms -
+  <-- GET /undefined
+  --> GET /undefined 404 2ms -
+  <-- GET /
+somebody just visit home page!
+hellala from custom helper
+  xxx GET / 500 1ms -
+-----7
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 404 1ms -
+  <-- GET /undefined
+  --> GET /undefined 404 2ms -
+  <-- GET /
+somebody just visit home page!
+hellala from custom helper
+  xxx GET / 500 1ms -
+-----7
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 404 2ms -
+  <-- GET /undefined
+  --> GET /undefined 404 2ms -
+  <-- GET /
+somebody just visit home page!
+hellala from custom helper
+  xxx GET / 500 1ms -
+-----7
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 404 1ms -
+  <-- GET /undefined
+  --> GET /undefined 404 1ms -
+  <-- GET /
+somebody just visit home page!
+hellala from custom helper
+  xxx GET / 500 1ms -
+-----7
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 404 2ms -
+  <-- GET /undefined
+  --> GET /undefined 404 1ms -
+  <-- GET /getFile
+  --> GET /getFile 404 2ms -
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 404 2ms -
+  <-- GET /undefined
+  --> GET /undefined 404 2ms -
+  <-- GET /hello
+well, I am saying hi now {
+  request: {
+    method: 'GET',
+    url: '/hello',
+    header: {
+      host: 'localhost:3002',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0',
+      accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate, br, zstd',
+      connection: 'keep-alive',
+      cookie: 'Webstorm-3565e98b=6cc461ea-2313-4958-8de5-fb02727381f6',
+      'upgrade-insecure-requests': '1',
+      'sec-fetch-dest': 'document',
+      'sec-fetch-mode': 'navigate',
+      'sec-fetch-site': 'none',
+      'sec-fetch-user': '?1',
+      priority: 'u=0, i',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8081',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept, accesstoken',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/hello',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+-----2
+-----4
+well, I am saying hi like final
+  --> GET /hello 404 2ms -
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 404 1ms -
+  <-- GET /undefined
+  --> GET /undefined 404 2ms -
+loading application====================>
+filePaths [
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\nut-core\\extend\\application',
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\app\\extend\\application'
+]
+filePaths [
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\nut-core\\extend\\context',
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\app\\extend\\context'
+]
+property====> helper filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\nut-core\extend\context.js
+filePaths [
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\nut-core\\extend\\helper',
+  'D:\\test_project\\testServerless\\node-docker\\koa-vue-framework-simple\\app\\extend\\helper'
+]
+property====> helloLa filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\nut-core\extend\helper.js
+property====> helloLa filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> readPages filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> formatBytes filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> errorCaptured filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> saveAs filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+property====> saveDraft filePath==> D:\test_project\testServerless\node-docker\koa-vue-framework-simple\app\extend\helper.js
+config {
+  username: 'root',
+  password: null,
+  database: 'database_development',
+  host: '127.0.0.1',
+  dialect: 'mysql'
+}
+The Main Service has started on port  3002
+  <-- GET /hello
+well, I am saying hi now {
+  request: {
+    method: 'GET',
+    url: '/hello',
+    header: {
+      host: 'localhost:3002',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0',
+      accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate, br, zstd',
+      connection: 'keep-alive',
+      cookie: 'Webstorm-3565e98b=6cc461ea-2313-4958-8de5-fb02727381f6',
+      'upgrade-insecure-requests': '1',
+      'sec-fetch-dest': 'document',
+      'sec-fetch-mode': 'navigate',
+      'sec-fetch-site': 'none',
+      'sec-fetch-user': '?1',
+      priority: 'u=0, i',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8081',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept, accesstoken',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/hello',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+-----2
+-----4
+well, I am saying hi like final
+  --> GET /hello 200 8ms 5b
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 404 2ms -
+  <-- GET /undefined
+  --> GET /undefined 404 2ms -
