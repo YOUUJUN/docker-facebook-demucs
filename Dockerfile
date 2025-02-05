@@ -23,7 +23,7 @@ RUN apt update && apt install -y --no-install-recommends \
 RUN npm config set registry https://registry.npmmirror.com
 
 # 配置 pip 使用国内镜像源
-RUN pip3 config set global.index-url https://mirrors.aliyun.com/pypi/simple/
+# RUN pip3 config set global.index-url https://mirrors.aliyun.com/pypi/simple/
 
 # Clone Demucs (now maintained in the original author's github space)
 COPY demucs-docker-source-main /lib/demucs
