@@ -19,7 +19,7 @@ RUN apt update && apt install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Clone Demucs (now maintained in the original author's github space)
-RUN git clone --single-branch --branch main https://github.com/YOUUJUN/demucs-docker-source.git /lib/demucs
+COPY demucs-docker-source-main /lib/demucs
 RUN cd /lib/demucs
 
 # Install dependencies with overrides for known working versions on this base image
