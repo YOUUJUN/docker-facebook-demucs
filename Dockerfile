@@ -18,13 +18,18 @@ RUN apt update && apt install -y --no-install-recommends \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-# 克隆 Demucs 并安装依赖
-RUN git clone --single-branch --branch main https://github.com/YOUUJUN/demucs-docker-source.git /lib/demucs \
-    && cd /lib/demucs \
-    && git checkout b9ab48cad45976ba42b2ff17b229c071f0df9390 \
-    && python3 -m pip install -e . "torch<2" "torchaudio<2" "numpy<2" --no-cache-dir \
-    && python3 -m demucs -d cpu test.mp3 \
-    && rm -r separated
+# Clone Demucs (now maintained in the original author's github space)
+RUN git clone --single-branch --branch main https://github.com/YOUUJUN/demucs-docker-source.git /lib/demucs
+RUN cd /lib/demucs
+# Checkout known stable commit on main
+RUN git checkout b9ab48cad45976ba42b2ff17b229c071f0df9390
+
+# Install dependencies with overrides for known working versions on this base image
+RUN python3 -m pip install -e . "torch<2" "torchaudio<2" "numpy<2" --no-cache-dir
+# Run once to ensure demucs works and trigger the default model download
+RUN python3 -m demucs -d cpu test.mp3 
+# Cleanup output - we just used this to download the model
+RUN rm -r separated
 
 # 复制项目文件并安装 Node.js 依赖
 COPY koa-vue-framework-simple /lib/project
