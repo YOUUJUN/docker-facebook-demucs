@@ -20,7 +20,7 @@ RUN apt update && apt install -y --no-install-recommends \
 
 # Clone Demucs (now maintained in the original author's github space)
 COPY demucs-docker-source-main /lib/demucs
-RUN cd /lib/demucs
+WORKDIR /lib/demucs
 
 # Install dependencies with overrides for known working versions on this base image
 RUN python3 -m pip install -e . "torch<2" "torchaudio<2" "numpy<2" --no-cache-dir
