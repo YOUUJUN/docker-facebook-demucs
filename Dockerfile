@@ -27,7 +27,7 @@ RUN git clone --single-branch --branch main https://github.com/YOUUJUN/demucs-do
     && rm -r separated
 
 # 复制项目文件并安装 Node.js 依赖
-RUN git clone --single-branch --branch master git@github.com:YOUUJUN/koa-vue-framework-simple.git /lib/project \
+RUN git clone --single-branch --branch master https://github.com/YOUUJUN/koa-vue-framework-simple.git /lib/project \
     && cd /lib/project \
     && npm install \
     && npm install -g pm2
