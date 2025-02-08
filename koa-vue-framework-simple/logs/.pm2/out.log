@@ -314,3 +314,457 @@ well, I am saying hi like final
   --> GET /favicon.ico 404 2ms -
   <-- GET /undefined
   --> GET /undefined 404 2ms -
+loading application====================>
+filePaths [
+  '/usr/lib/project/nut-core/extend/application',
+  '/usr/lib/project/app/extend/application'
+]
+filePaths [
+  '/usr/lib/project/nut-core/extend/context',
+  '/usr/lib/project/app/extend/context'
+]
+property====> helper filePath==> /usr/lib/project/nut-core/extend/context.js
+filePaths [
+  '/usr/lib/project/nut-core/extend/helper',
+  '/usr/lib/project/app/extend/helper'
+]
+property====> helloLa filePath==> /usr/lib/project/nut-core/extend/helper.js
+property====> helloLa filePath==> /usr/lib/project/app/extend/helper.js
+property====> readPages filePath==> /usr/lib/project/app/extend/helper.js
+property====> formatBytes filePath==> /usr/lib/project/app/extend/helper.js
+property====> errorCaptured filePath==> /usr/lib/project/app/extend/helper.js
+property====> saveAs filePath==> /usr/lib/project/app/extend/helper.js
+property====> saveDraft filePath==> /usr/lib/project/app/extend/helper.js
+config {
+  username: 'root',
+  password: null,
+  database: 'database_development',
+  host: '127.0.0.1',
+  dialect: 'mysql'
+}
+The Main Service has started on port  3002
+  <-- GET /hello
+well, I am saying hi now {
+  request: {
+    method: 'GET',
+    url: '/hello',
+    header: {
+      host: 'localhost:3002',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0',
+      accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate, br, zstd',
+      connection: 'keep-alive',
+      cookie: 'Webstorm-3565e98b=6cc461ea-2313-4958-8de5-fb02727381f6',
+      'upgrade-insecure-requests': '1',
+      'sec-fetch-dest': 'document',
+      'sec-fetch-mode': 'navigate',
+      'sec-fetch-site': 'none',
+      'sec-fetch-user': '?1',
+      priority: 'u=0, i'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8081',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept, accesstoken',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/hello',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+__dirname /usr/lib/project/app/controller
+well, I am saying hi like final
+  --> GET /hello 200 67ms 5b
+  <-- GET /favicon.ico
+  <-- GET /undefined
+  --> GET /undefined 404 6ms -
+  <-- GET /hello
+well, I am saying hi now {
+  request: {
+    method: 'GET',
+    url: '/hello',
+    header: {
+      host: 'localhost:3002',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0',
+      accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate, br, zstd',
+      connection: 'keep-alive',
+      cookie: 'Webstorm-3565e98b=6cc461ea-2313-4958-8de5-fb02727381f6',
+      'upgrade-insecure-requests': '1',
+      'sec-fetch-dest': 'document',
+      'sec-fetch-mode': 'navigate',
+      'sec-fetch-site': 'none',
+      'sec-fetch-user': '?1',
+      priority: 'u=0, i'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8081',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept, accesstoken',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/hello',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+__dirname /usr/lib/project/app/controller
+well, I am saying hi like final
+  --> GET /hello 200 6ms 5b
+  <-- GET /favicon.ico
+  <-- GET /undefined
+  --> GET /undefined 404 6ms -
+loading application====================>
+filePaths [
+  '/usr/lib/project/nut-core/extend/application',
+  '/usr/lib/project/app/extend/application'
+]
+filePaths [
+  '/usr/lib/project/nut-core/extend/context',
+  '/usr/lib/project/app/extend/context'
+]
+property====> helper filePath==> /usr/lib/project/nut-core/extend/context.js
+filePaths [
+  '/usr/lib/project/nut-core/extend/helper',
+  '/usr/lib/project/app/extend/helper'
+]
+property====> helloLa filePath==> /usr/lib/project/nut-core/extend/helper.js
+property====> helloLa filePath==> /usr/lib/project/app/extend/helper.js
+property====> readPages filePath==> /usr/lib/project/app/extend/helper.js
+property====> formatBytes filePath==> /usr/lib/project/app/extend/helper.js
+property====> errorCaptured filePath==> /usr/lib/project/app/extend/helper.js
+property====> saveAs filePath==> /usr/lib/project/app/extend/helper.js
+property====> saveDraft filePath==> /usr/lib/project/app/extend/helper.js
+config {
+  username: 'root',
+  password: null,
+  database: 'database_development',
+  host: '127.0.0.1',
+  dialect: 'mysql'
+}
+The Main Service has started on port  3002
+  <-- GET /hello
+well, I am saying hi now {
+  request: {
+    method: 'GET',
+    url: '/hello',
+    header: {
+      host: 'localhost:3002',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0',
+      accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate, br, zstd',
+      connection: 'keep-alive',
+      cookie: 'Webstorm-3565e98b=6cc461ea-2313-4958-8de5-fb02727381f6',
+      'upgrade-insecure-requests': '1',
+      'sec-fetch-dest': 'document',
+      'sec-fetch-mode': 'navigate',
+      'sec-fetch-site': 'none',
+      'sec-fetch-user': '?1',
+      priority: 'u=0, i'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8081',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept, accesstoken',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/hello',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+__dirname1 /usr/lib/project/app/controller
+well, I am saying hi like final
+  --> GET /hello 200 29ms 5b
+  <-- GET /favicon.ico
+  <-- GET /undefined
+  --> GET /undefined 404 7ms -
+loading application====================>
+filePaths [
+  '/usr/lib/project/nut-core/extend/application',
+  '/usr/lib/project/app/extend/application'
+]
+filePaths [
+  '/usr/lib/project/nut-core/extend/context',
+  '/usr/lib/project/app/extend/context'
+]
+property====> helper filePath==> /usr/lib/project/nut-core/extend/context.js
+filePaths [
+  '/usr/lib/project/nut-core/extend/helper',
+  '/usr/lib/project/app/extend/helper'
+]
+property====> helloLa filePath==> /usr/lib/project/nut-core/extend/helper.js
+property====> helloLa filePath==> /usr/lib/project/app/extend/helper.js
+property====> readPages filePath==> /usr/lib/project/app/extend/helper.js
+property====> formatBytes filePath==> /usr/lib/project/app/extend/helper.js
+property====> errorCaptured filePath==> /usr/lib/project/app/extend/helper.js
+property====> saveAs filePath==> /usr/lib/project/app/extend/helper.js
+property====> saveDraft filePath==> /usr/lib/project/app/extend/helper.js
+config {
+  username: 'root',
+  password: null,
+  database: 'database_development',
+  host: '127.0.0.1',
+  dialect: 'mysql'
+}
+The Main Service has started on port  3002
+  <-- GET /hello
+well, I am saying hi now {
+  request: {
+    method: 'GET',
+    url: '/hello',
+    header: {
+      host: 'localhost:3002',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0',
+      accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate, br, zstd',
+      connection: 'keep-alive',
+      cookie: 'Webstorm-3565e98b=6cc461ea-2313-4958-8de5-fb02727381f6',
+      'upgrade-insecure-requests': '1',
+      'sec-fetch-dest': 'document',
+      'sec-fetch-mode': 'navigate',
+      'sec-fetch-site': 'none',
+      'sec-fetch-user': '?1',
+      priority: 'u=0, i'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8081',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept, accesstoken',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/hello',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+__dirname1 /usr/lib/project/app/controller
+well, I am saying hi like final
+  --> GET /hello 200 26ms 5b
+  <-- GET /undefined
+  --> GET /undefined 404 7ms -
+loading application====================>
+filePaths [
+  '/usr/lib/project/nut-core/extend/application',
+  '/usr/lib/project/app/extend/application'
+]
+filePaths [
+  '/usr/lib/project/nut-core/extend/context',
+  '/usr/lib/project/app/extend/context'
+]
+property====> helper filePath==> /usr/lib/project/nut-core/extend/context.js
+filePaths [
+  '/usr/lib/project/nut-core/extend/helper',
+  '/usr/lib/project/app/extend/helper'
+]
+property====> helloLa filePath==> /usr/lib/project/nut-core/extend/helper.js
+property====> helloLa filePath==> /usr/lib/project/app/extend/helper.js
+property====> readPages filePath==> /usr/lib/project/app/extend/helper.js
+property====> formatBytes filePath==> /usr/lib/project/app/extend/helper.js
+property====> errorCaptured filePath==> /usr/lib/project/app/extend/helper.js
+property====> saveAs filePath==> /usr/lib/project/app/extend/helper.js
+property====> saveDraft filePath==> /usr/lib/project/app/extend/helper.js
+config {
+  username: 'root',
+  password: null,
+  database: 'database_development',
+  host: '127.0.0.1',
+  dialect: 'mysql'
+}
+The Main Service has started on port  3002
+  <-- GET /hello
+well, I am saying hi now {
+  request: {
+    method: 'GET',
+    url: '/hello',
+    header: {
+      host: 'localhost:3002',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0',
+      accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate, br, zstd',
+      connection: 'keep-alive',
+      cookie: 'Webstorm-3565e98b=6cc461ea-2313-4958-8de5-fb02727381f6',
+      'upgrade-insecure-requests': '1',
+      'sec-fetch-dest': 'document',
+      'sec-fetch-mode': 'navigate',
+      'sec-fetch-site': 'none',
+      'sec-fetch-user': '?1',
+      priority: 'u=0, i'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8081',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept, accesstoken',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/hello',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+__dirname1 /usr/lib/project/app/controller
+well, I am saying hi like final
+error Error: spawn /usr/lib/demucs/ EACCES
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:268:19)
+    at onErrorNT (internal/child_process.js:470:16)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'EACCES',
+  code: 'EACCES',
+  syscall: 'spawn /usr/lib/demucs/',
+  path: '/usr/lib/demucs/',
+  spawnargs: [ 'demucs' ],
+  cmd: '/usr/lib/demucs/ demucs'
+}
+stdout 
+stderr 
+  --> GET /hello 200 39ms 5b
+  <-- GET /undefined
+  --> GET /undefined 404 6ms -
+loading application====================>
+filePaths [
+  '/usr/lib/project/nut-core/extend/application',
+  '/usr/lib/project/app/extend/application'
+]
+filePaths [
+  '/usr/lib/project/nut-core/extend/context',
+  '/usr/lib/project/app/extend/context'
+]
+property====> helper filePath==> /usr/lib/project/nut-core/extend/context.js
+filePaths [
+  '/usr/lib/project/nut-core/extend/helper',
+  '/usr/lib/project/app/extend/helper'
+]
+property====> helloLa filePath==> /usr/lib/project/nut-core/extend/helper.js
+property====> helloLa filePath==> /usr/lib/project/app/extend/helper.js
+property====> readPages filePath==> /usr/lib/project/app/extend/helper.js
+property====> formatBytes filePath==> /usr/lib/project/app/extend/helper.js
+property====> errorCaptured filePath==> /usr/lib/project/app/extend/helper.js
+property====> saveAs filePath==> /usr/lib/project/app/extend/helper.js
+property====> saveDraft filePath==> /usr/lib/project/app/extend/helper.js
+config {
+  username: 'root',
+  password: null,
+  database: 'database_development',
+  host: '127.0.0.1',
+  dialect: 'mysql'
+}
+The Main Service has started on port  3002
+  <-- GET /hello
+well, I am saying hi now {
+  request: {
+    method: 'GET',
+    url: '/hello',
+    header: {
+      host: 'localhost:3002',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0',
+      accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate, br, zstd',
+      connection: 'keep-alive',
+      cookie: 'Webstorm-3565e98b=6cc461ea-2313-4958-8de5-fb02727381f6',
+      'upgrade-insecure-requests': '1',
+      'sec-fetch-dest': 'document',
+      'sec-fetch-mode': 'navigate',
+      'sec-fetch-site': 'none',
+      'sec-fetch-user': '?1',
+      priority: 'u=0, i'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8081',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept, accesstoken',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/hello',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+__dirname1 /usr/lib/project/app/controller
+well, I am saying hi like final
+  --> GET /hello 200 32ms 5b
+error Error: Command failed: /usr/lib/demucs/
+/bin/sh: 1: /usr/lib/demucs/: Permission denied
+
+    at ChildProcess.exithandler (child_process.js:308:12)
+    at ChildProcess.emit (events.js:314:20)
+    at maybeClose (internal/child_process.js:1022:16)
+    at Socket.<anonymous> (internal/child_process.js:444:11)
+    at Socket.emit (events.js:314:20)
+    at Pipe.<anonymous> (net.js:676:12) {
+  killed: false,
+  code: 126,
+  signal: null,
+  cmd: '/usr/lib/demucs/'
+}
+stdout 
+stderr /bin/sh: 1: /usr/lib/demucs/: Permission denied
+
+  <-- GET /favicon.ico
+  <-- GET /undefined
+  --> GET /undefined 404 7ms -
+loading application====================>
+filePaths [
+  '/usr/lib/project/nut-core/extend/application',
+  '/usr/lib/project/app/extend/application'
+]
+filePaths [
+  '/usr/lib/project/nut-core/extend/context',
+  '/usr/lib/project/app/extend/context'
+]
+property====> helper filePath==> /usr/lib/project/nut-core/extend/context.js
+filePaths [
+  '/usr/lib/project/nut-core/extend/helper',
+  '/usr/lib/project/app/extend/helper'
+]
+property====> helloLa filePath==> /usr/lib/project/nut-core/extend/helper.js
+property====> helloLa filePath==> /usr/lib/project/app/extend/helper.js
+property====> readPages filePath==> /usr/lib/project/app/extend/helper.js
+property====> formatBytes filePath==> /usr/lib/project/app/extend/helper.js
+property====> errorCaptured filePath==> /usr/lib/project/app/extend/helper.js
+property====> saveAs filePath==> /usr/lib/project/app/extend/helper.js
+property====> saveDraft filePath==> /usr/lib/project/app/extend/helper.js
+config {
+  username: 'root',
+  password: null,
+  database: 'database_development',
+  host: '127.0.0.1',
+  dialect: 'mysql'
+}
+The Main Service has started on port  3002

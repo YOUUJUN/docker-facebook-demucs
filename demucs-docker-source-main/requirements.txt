@@ -12,8 +12,11 @@ mypy
 openunmix
 pyyaml
 submitit
-torch>=1.8.1
+torch>=1.8.1,<2
 torchaudio>=0.8,<2.2
 tqdm
 treetable
 soundfile>=0.10.3
+Flask
+gunicorn
+numpy==1.23.5
