@@ -3,6 +3,8 @@ import os
 import subprocess
 import shutil
 import uuid
+import torch
+import shutil
 
 app = Flask(__name__)
 
@@ -19,6 +21,17 @@ os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 def allowed_file(filename):
     """检查文件扩展名是否允许"""
     return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
+
+
+# 删除目录下所有文件
+def delete_all_files(directory):
+    # 检查目录是否存在
+    if not os.path.exists(directory):
+        print(f"Directory {directory} does not exist")
+        return
+
+    # 删除整个目录树
+    shutil.rmtree(directory)
 
 
 @app.route("/initialize", methods=["POST"])
@@ -91,10 +104,27 @@ def invoke():
     request_id = request.headers.get("x-fc-request-id", "")
     print("FC Invoke Start RequestId: " + request_id)
 
+    unique_id = str(uuid.uuid4())
+    audioName = "test"
+    processAudio = f"/usr/lib/demucs/{audioName}.mp3"
+    cachedAudio = f"/tmp/output/htdemucs/{audioName}"
+
+    tmpDir = f"/tmp/output"
+
     try:
         # 调用 demucs -h 命令
         result = subprocess.run(
-            ["python3", "-m", "demucs", "-h"],
+            [
+                "python3",
+                "-m",
+                "demucs",
+                "--two-stems=vocals",
+                "-n",
+                "htdemucs",
+                "/usr/lib/demucs/test.mp3",
+                "-o",
+                tmpDir,
+            ],
             check=True,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
@@ -105,12 +135,14 @@ def invoke():
         stdout = result.stdout
         stderr = result.stderr
 
+        delete_all_files(cachedAudio)
+
         # 返回响应
         return jsonify({"stdout": stdout, "stderr": stderr}), 200
 
     except subprocess.CalledProcessError as e:
         return (
-            jsonify(/
+            jsonify(
                 {
                     "error": f"Command failed with exit code {e.returncode}",
                     "stderr": e.stderr,
@@ -122,7 +154,8 @@ def invoke():
 
 @app.route("/hello", methods=["GET"])
 def hello_world():
-    return "Hello, World youjun!"
+    # print(torch.cuda.is_available())
+    return f"Hello, World youjun!{torch.cuda.is_available()}"
 
 
 if __name__ == "__main__":
