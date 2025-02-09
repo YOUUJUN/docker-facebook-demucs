@@ -19,9 +19,6 @@ RUN apt update && apt install -y --no-install-recommends \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-# 配置 npm 使用国内镜像源
-RUN npm config set registry https://registry.npmmirror.com
-
 # 配置 pip 使用国内镜像源
 # RUN pip3 config set global.index-url https://mirrors.aliyun.com/pypi/simple/
 
@@ -29,41 +26,14 @@ RUN npm config set registry https://registry.npmmirror.com
 COPY demucs-docker-source-main /lib/demucs
 WORKDIR /lib/demucs
 
-# Install dependencies with overrides for known working versions on this base image
-# RUN pip3 install --default-timeout=100 -e . "torch<2" "torchaudio<2" "numpy<2" --no-cache-dir
-
 RUN pip3 install -r requirements.txt
-
-# # 安装 Flask 依赖
-# RUN pip3 install Flask \
-#     && pip3 install gunicorn
 
 # Run once to ensure demucs works and trigger the default model download
 RUN python3 -m demucs -d cpu test.mp3 
 # Cleanup output - we just used this to download the model
 RUN rm -r separated
 
-# # 复制项目文件并安装 Node.js 依赖
-# COPY koa-vue-framework-simple /lib/project
-
-# # 设置工作目录
-# WORKDIR /lib/project
-
-# # 安装项目依赖
-# RUN npm install
-
-# # 全局安装 pm2
-# RUN npm install -g pm2
-
-# 设置数据卷
-VOLUME /data/input
-VOLUME /data/output
-VOLUME /data/models
-
 # 暴露端口
 EXPOSE 3002
 
 CMD ["gunicorn", "-b", "0.0.0.0:3002", "app:app"]
-
-# 启动应用
-# CMD ["pm2-runtime", "ecosystem.config.js"]
